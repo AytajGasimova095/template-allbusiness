@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script type="text/javascript">
+$(window).scroll(function () {
+var sticky = $('.sticky'),
+scroll = $(window).scrollTop();
+
+if (scroll >= 15) sticky.addClass('fixed');
+else sticky.removeClass('fixed');
+});
+$('.categories').click(function(){
+$('.content').hide();
+$('.category').show(300)
+})
+$('.branding').click(function(){
+$('.content').hide();
+$('.brand').show(300)
+})
+$('.business').click(function(){
+$('.content').hide();
+$('.busy').show(300)
+})
+$('.design').click(function(){
+$('.content').hide();
+$('.color').show(300)
+})
+$('.material').click(function(){
+$('.content').hide();
+$('.materials').show(300)
+})
+
+$(document).ready(function() {
+$('#media').carousel({
+pause: false,
+interval: 3000,
+});
+});
+
+$('.sub2').mouseover(function(){
+$(this).find('.carousel2').show()
+})
+$('.sub2').mouseout(function(){
+$(this).find('.carousel2').hide()
+})
+
+
+</script>
+
+<style type="text/css">
+.col-md-7 i{
+color: #00bcd4
+}
+.col-md-5 i{
+color: grey;
+margin: 3px;
+color: grey;
+opacity: 0.4
+}
+.col-md-5 span{
+float: right;
+font-size: 15px
+}
+.col-md-5 i:hover{
+opacity: 1;
+color: #00bcd4
+}
+.col-md-10 i{
+color: grey;
+opacity: 0.4
+}
+.col-md-10 i:hover{
+opacity: 1;
+color: #00bcd4}
+.navbar-toggle collapsed span{
+color:white
+}
+.dropdown:hover .dropdown-menu{
+display: block;
+transition: 0.7s
+}
+.navbar{
+background: #00bcd4;
+margin-top: 10px;
+border: none;
+padding-left: 180px;
+margin-bottom: 0px;
+border-radius: 0px
+}
+.dropdown a{
+font-size: 15px;
+color: white
+}
+.dropdown-toggle span{
+color: white;
+opacity: 0.5
+}
+.dropdown-toggle span:hover{
+opacity: 1;
+transition: 0.1s
+}
+.dropdown-toggle span:hover ul{
+display: block
+}
+.dropdown-menu li{
+color: grey;
+opacity: 0.5;
+margin-top: 10px
+}
+
+.dropdown-menu li:hover{
+border-left: 2px solid #00bcd4;
+transition: 0.3s;
+opacity: 1}
+.dropdown-toggle span{
+text-transform: uppercase;
+font-size: 15px;
+font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+
+}
+.dropdown-toggle span:hover{
+background: #00bcd4;
+opacity: 1.2
+}
+
+.custom{
+border: none;
+color: white;
+background: #00bcd4;
+
+}
+.carousel-countrol{
+box-shadow: none;
+}
+.information{
+padding-top: 90px
+}
+.information .col-md-4{
+height:200px;
+
+}
+.information i{
+margin: 10px;
+color: #00bcd4;
+font-size: 35px
+}
+.custom1{
+color: #00bcd4;
+background: white;
+border: none;
+text-transform: uppercase
+}
+.search h1{
+font-size: 20px;
+color: black
+}
+.search i{
+color:#00bcd4;
+font-size: 30px
+}
+.information h1{
+font-size: 25px
+}
+.balacalar{
+height: 200px
+}
+#attch{
+background-image: url('http://all-business.cmsmasters.net/wp-content/uploads/2015/06/Depositphotos_57651053_original-9.jpg');
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+padding-top: 300px;
+}
+.status{
+
+height: auto
+
+}
+.text-center{
+margin-top: -150px
+}
+.status .col-md-2{
+margin: 50px;
+background: white
+}
+.stat{
+width: 50%;
+
+margin-left: -50px;
+margin-top: 30px;
+
+height: 130px;
+background-color: #00bcd4
+
+
+
+}
+
+.status span{
+font-size: 20px;
+padding-top: 10px;
+color: #00bcd4;
+}
+.status .spn{
+padding-bottom:-20px;
+color: grey
+}
+.projects{
+height: 400px;
+width: 100%;
+background:black;
+
+padding-top: 130px;
+
+
+}
+.projects1 h1{
+color: white;
+border-bottom: 2px solid #00bcd4;
+width: 200px;
+margin:0 auto
+}
+.projects1 p{
+color: grey;
+
+width: 100%;
+text-align: center;
+padding-top: 10px
+}
+.fixed {
+position: fixed;
+top:0; left:0;
+width: 100%;
+z-index: 4;
+padding-top: 20px }
+.sticky{
+
+width: 100%;
+background: white
+}
+.tabs{
+height: auto;
+background-color: white;
+padding-top: 30px;
+padding-bottom: 15px
+
+
+}
+.tabs div{
+margin: 5px
+}
+.tabs span{
+color: #212121;
+text-transform: uppercase;
+vertical-align: baseline;
+outline: none;background: transparent;
+font-family: 'Roboto', Arial, Helvetica, 'Nimbus Sans L', sans-serif;line-height: 20px;font-weight: 500;
+font-style: normal;
+}
+.tab{
+box-shadow: 0px 12px 10px -15px #111;
+}
+.content{
+height: auto;
+padding-top: 20px
+}
+.tabs:first-child{
+border-bottom: 2px solid #00bcd4
+}
+.subject{
+height: 70%;
+width: 100%;
+position: relative
+
+}
+.sub{
+height: 280px;
+
+margin: 20px;
+box-shadow: -10px 12px 10px -15px ;
+
+}
+.subject img{
+height: 100%;
+
+}
+.tabs span:hover{
+color: #00bcd4
+
+}
+.brand{
+display: none
+}
+.busy{
+display: none
+}
+.color{
+display: none
+}
+.materials{
+display: none
+}
+.subject i{
+position: absolute;
+top: 50%;
+left: 50%;
+
+
+}
+.subject:hover .subject i{
+display: block
+}
+.info .col-md-4{
+height: 250px;
+
+padding-top: 30px
+}
+.info{
+padding-top: 50px;
+height: auto;
+
+width: 100%
+}
+.info .col-md-4:first-child{
+background: #00bcd4
+}
+.info h1, .info p{
+color: white
+}
+.butn1{
+
+border: none;
+width: 120px;
+height: auto;
+font-size: 20px;
+
+color: white
+}
+
+
+
+.iki {
+position: relative;
+overflow: hidden;
+height: auto
+}
+
+.iki img {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: auto;
+opacity: 0.9;
+}
+.iki h1, .iki p, .iki .butn1{
+color: white;
+
+position: relative;
+z-index: 2;
+}
+.uc{
+background: black
+}
+body{
+overflow-x: hidden
+}
+.latest{
+margin-top: 30px;}
+.media-carousel
+{
+margin-bottom: 0;
+padding: 0 40px 30px 40px;
+margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left
+{
+left: -12px;
+background-image: none;
+background: none repeat scroll 0 0 #222222;
+border: 4px solid #FFFFFF;
+border-radius: 23px 23px 23px 23px;
+height: 40px;
+width : 40px;
+margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right
+{
+right: -12px !important;
+background-image: none;
+background: none repeat scroll 0 0 #222222;
+border: 4px solid #FFFFFF;
+border-radius: 23px 23px 23px 23px;
+height: 40px;
+width : 40px;
+margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators
+{
+right: 50%;
+top: auto;
+bottom: 0px;
+margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li
+{
+background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active
+{
+background: #333333;
+}
+.media-carousel img
+{
+width: 100%;
+height: 200px
+}
+.grd div{
+margin-top: 7%;
+
+}
+.innovation span{
+color: grey;
+
+padding-left: 5px
+}
+.innovation button{
+
+color: #00bcd4;
+border: none;
+background: white;
+font-size: 15px
+}
+.grd{
+box-shadow: -10px 13px 10px -15px ;
+height: auto;
+
+}
+.hediyye{
+background-image: url('http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_96269234_original.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
+padding-top: 10%
+}
+.hediyye .col-md-12{
+text-align: center;
+color: white
+}
+
+.progress{
+width: 150px;
+height: 150px;
+line-height: 150px;
+background: none;
+margin: 0 auto;
+box-shadow: none;
+position: relative;
+}
+.progress:after{
+content: "";
+width: 100%;
+height: 100%;
+border-radius: 50%;
+border: 1px solid #fff;
+position: absolute;
+top: 0;
+left: 0;
+}
+.progress > span{
+width: 50%;
+height: 100%;
+overflow: hidden;
+position: absolute;
+top: 0;
+z-index: 1;
+}
+.progress .progress-left{
+left: 0;
+}
+.progress .progress-bar{
+width: 100%;
+height: 100%;
+background: none;
+border-width: 1px;
+border-style: solid;
+position: absolute;
+top: 0;
+}
+.progress .progress-left .progress-bar{
+left: 100%;
+border-top-right-radius: 80px;
+border-bottom-right-radius: 80px;
+border-left: 0;
+-webkit-transform-origin: center left;
+transform-origin: center left;
+}
+.progress .progress-right{
+right: 0;
+}
+.progress .progress-right .progress-bar{
+left: -100%;
+border-top-left-radius: 80px;
+border-bottom-left-radius: 80px;
+border-right: 0;
+-webkit-transform-origin: center right;
+transform-origin: center right;
+animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+width: 90%;
+height: 90%;
+border-radius: 50%;
+background:none;
+font-size: 24px;
+color: #fff;
+line-height: 135px;
+text-align: center;
+position: absolute;
+top: 5%;
+left: 5%;
+}
+.progress.blue .progress-bar{
+border-color: #00bcd4
+}
+.progress.green .progress-bar{
+border-color: #00bcd4
+}
+.progress.blue .progress-left .progress-bar{
+animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-left .progress-bar{
+animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-left .progress-bar{
+animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-left .progress-bar{
+animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+0%{
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100%{
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+}
+@keyframes loading-2{
+0%{
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100%{
+-webkit-transform: rotate(144deg);
+transform: rotate(144deg);
+}
+}
+@keyframes loading-3{
+0%{
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100%{
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+}
+@keyframes loading-4{
+0%{
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100%{
+-webkit-transform: rotate(36deg);
+transform: rotate(36deg);
+}
+}
+@keyframes loading-5{
+0%{
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+100%{
+-webkit-transform: rotate(355deg);
+transform: rotate(355deg);
+}
+}
+@media only screen and (max-width: 990px){
+.progress{ margin-bottom: 20px; }
+}
+.hediyye .col-md-2{
+margin: 15px
+}
+.members h1{
+color: black;
+text-align: center;
+border-bottom: 1px solid #00bcd4
+}
+.members{
+padding-top: 100px
+}
+.members p{
+color: grey;
+text-align: center;
+font-size: 15px
+}
+.members .col-md-4{
+height: auto;
+box-shadow: -10px 12px 10px -15px ;
+
+
+margin-top: 40px;
+
+}
+.membersphoto{
+width: 100%;
+height: auto;
+position: relative;
+
+}
+.membersphoto img{
+
+width: 100%;
+
+
+
+}
+
+.membersname{
+position: absolute;
+bottom: 0px;
+left: 0px;
+color: grey
+
+}
+.infoaboutmembers p{
+text-align: left;
+color: grey
+}
+.infoaboutmembers{
+padding-top: 20px
+}
+.infoaboutmembers i{
+color: grey;
+margin: 3px;
+
+}
+.infoaboutmembers .pull-left:hover{
+color: #00bcd4
+}
+.masters{
+margin-top: 50px;
+background: #00bcd4
+}
+.masters .col-md-2{
+
+height: auto;
+padding-top: 50px
+}
+.masters .col-md-2 img{
+width: 40%;
+height: auto
+}
+.masters .col-md-10{
+padding-top: 30px;
+color: white
+}
+.counter span{
+font-size: 60px;
+color: #00bcd4
+}
+.counter{
+margin-top: 100px;
+font-weight: normal
+}
+.counter .col-md-2{
+margin: 10px
+}
+.counter h3{
+color: white
+}
+.counter1{
+background: black;
+min-height: 300px
+}
+.prices{
+padding-top: 70px
+}
+.div1{
+
+border-bottom: 1px solid grey;
+font-size: 20px
+}
+.div2 span{
+font-size: 80px;
+
+}
+.div2{
+border-bottom: 1px solid grey
+}
+.divul{
+color: grey;
+padding-top: 20px;
+font-size: 15px
+}
+.col-md-3 button{
+background: #ff4081;
+color: white;
+font-size: 20px;
+border: 1px solid  #ff4081;
+margin-top: 20px;
+}
+.prices .col-md-3{
+box-shadow: -10px 15px 10px -15px ;
+margin-top: 50px;
+height: auto
+}
+.progress1{
+background: pink;
+height: 3px
+}
+.progress-bar1{
+background:#ff4081;
+height: 3px;
+
+}
+.statbar{
+padding-top: 10px
+}
+.subject2{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2016/01/smartwatch-1-1160x831.jpg");
+
+}
+.sub2{
+height: 300px;
+position: relative;
+background-size: cover;
+background-repeat: no-repeat
+}
+.carousel2{
+position: absolute;
+bottom: 0;
+background: white;
+display: none;
+left: 0
+}
+.sub2holder{
+width: 100%;
+margin-top: 50px
+}
+.subject3{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_26628643_original-1160x640.jpg")
+}
+.subject4{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_67044065_original-2.jpg")
+}
+.subject9{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2015/06/02-Isometric-iPad-Air-Silver-Mock-up-1.jpg")
+}
+.subject7{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_57650735_original-1.jpg")
+}
+.subject8{
+background-image: url("http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_75968269_original-1.jpg")
+}
+.analyst .col-md-3{
+height: 50px
+}
+.lists i{
+margin: 10px
+}
+footer li{
+margin-top: 15px;
+padding: 0;
+color: white;
+opacity: 0.4
+
+}
+.form-group{
+border-bottom: 1px solid grey;
+background: none;
+color: white;opacity: 0.5
+
+}
+footer h3{
+color: white;
+border-bottom: 2px solid #00bcd4
+}
+.tabs span{
+cursor: pointer;
+}
+footer{
+background: black;
+padding-top: 50px
+}
+footer li:hover{
+opacity: 1;
+color: white
+}
+.inputbtn{
+
+
+color: white;
+
+height: 50px;
+background: none;
+font-size: 20px;
+cursor: pointer;
+width: 200px;
+text-align: center;
+padding-top: 10px;
+opacity: 0.4;
+border: none
+
+}
+.inputbtn:hover{
+background: #00bcd4;
+opacity: 1
+}
+</style>
+
+
+
+<title>Document</title>
+</head>
+
+<body>
+<div class="container ">
+<div class="row">
+
+<div class="col-md-7 hidden-xs" style="padding-top:10px">
+<span>
+<i class="fa fa-map-marker"></i>
+Brooklyn, NY 10036, United States
+</span>
+<span>
+<i class="fa fa-mobile"></i>
+1-800-123-1234
+</span>
+<span>
+<i class="fa fa-envelope"> </i>
+example@all-business.com
+</span>
+</div>
+<div class="col-md-5">
+<span>
+<i class="fa fa-facebook">
+
+</i>
+<i class="fa fa-camera">
+
+</i>
+<i class="fa fa-google-plus"></i>
+<i class="fa fa-youtube-play"></i>
+<i class="fa fa-twitter"></i>
+
+</span>
+</div>
+
+</div>
+<hr>
+</div>
+<div class="sticky">
+
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-xs-12 col-ld-12" style="padding-bottom:12px">
+<img src="logo.png" alt="" class="img-responsive">
+</div>
+<div class="col-md-10 hidden-xs hidden-sm ">
+<span class="pull-right">
+<i class="fa fa-shopping-cart"></i>
+<i class="fa fa-search"></i>
+</span>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default">
+<div class="containerS">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+aria-expanded="false" style="background:#00bcd4;">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+<span>Home</span>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="allbusiness.html">Business Default</a>
+</li>
+<li>
+<a href="">Business Conference</a>
+</li>
+<li>
+<a href="">Business Agency</a>
+</li>
+<li>
+<a href="">Classic Boxed</a>
+</li>
+<li>
+<a href="">Portfolio Agency</a>
+</li>
+<li>
+<a href="">Clasic Shop</a>
+</li>
+<li>
+<a href="">Modern Business</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+<span>LAYOUTS</span>
+</a>
+<ul class="dropdown-menu">
+
+<li>
+<a href="about.html">About</a>
+</li>
+<li>
+<a href="#">Pricing</a>
+</li>
+<li>
+<a href="#"> Services</a>
+</li>
+<li>
+<a href="#">Events</a>
+</li>
+<li>
+<a href="news.html">News</a>
+</li>
+<li>
+<a href="contacts.html">Contacts</a>
+</li>
+
+<li>
+<a href="">Typography</a>
+</li>
+<li>
+<a href="">404</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+<span>SHORTCODES</span></a>
+<ul class="dropdown-menu multi-column columns-6">
+<div class="row">
+<div class="col-sm-2" style="background-color:white;">
+<ul class="multi-column-dropdown">
+<li><a href="#">01</a></li>
+<li class="divider"  style="background-color:red;"></li>
+<li><a href="#">Blog Shortcode</a></li>
+<li><a href="#">Buttons/Icons</a></li>
+<li><a href="#">Contact Forms</a></li>
+<li><a href="#">Clients</a></li>
+<li><a href="#">Custom, HTML, CSS, JS</a></li>
+<li><a href="#">Counters, Progress Bars</a></li>
+<li><a href="#">Dividers</a></li>
+
+
+
+
+
+</ul>
+</div>
+<div class="col-sm-2" style="background-color:white;">
+<ul class="multi-column-dropdown">
+<li><a href="#">02</a></li>
+<li class="divider"  style="background-color:red;"></li>
+<li><a href="#">Embedded</a></li>
+<li><a href="#">Feature Blocks</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Google Maps</a></li>
+
+
+<li><a href="#">Icon Boxes</a></li>
+<br>
+
+<li><a href="#">Icon List</a></li>
+<br>
+<li><a href="#">Images</a></li>
+
+</ul>
+</div>
+<div class="col-sm-2" style="background-color:white;">
+<ul class="multi-column-dropdown">
+<li><a href="#">03</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li><a href="#">Notice Boxes</a></li>
+<li><a href="#">Portfolio Shortcode</a></li>
+<li><a href="#">Posts or Projects slider</a></li>
+<li><a href="#">Pricing Tables</a></li>
+<li><a href="#">Profiles</a></li>
+<li><a href="#">Quotes</a></li>
+<li><a href="#">Sidebar</a></li>
+
+</ul>
+</div>
+<div class="col-sm-2" style="background-color:white;">
+<ul class="multi-column-dropdown">
+<li><a href="#">04</a></li>
+<li class="divider"  style="background-color:red;"></li>
+<li><a href="">Sliders</a></li>
+<li><a href="#">Social sharing</a></li>
+<br>
+<li><a href="#">Special Headings</a></li>
+<li><a href="#">Tables</a></li>
+<li><a href="#">Tabs/Tours</a></li>
+<li><a href="#">Toggles/Accordions</a></li>
+<li><a href="#">Tweets</a></li>
+
+</ul>
+</div>
+</div>
+</ul>
+</li>
+<style type="text/css">
+.dropdown-menu {
+min-width: 1000px;
+}
+
+.dropdown-menu.columns-2 {
+min-width: 1000px;
+}
+.dropdown-menu li a {
+padding: 5px 15px;
+font-weight: 300;
+}
+.multi-column-dropdown {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+.multi-column-dropdown li a {
+display: block;
+clear: both;
+line-height: 1.428571429;
+color: black;
+white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+text-decoration: none;
+color:black;
+background-color: white;
+}
+
+@media (max-width: 767px) {
+.dropdown-menu.multi-column {
+min-width: 240px !important;
+overflow-x: hidden;
+}
+}
+</style>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+<span>POST TYPES</span></a>
+<ul class="dropdown-menu multi-column columns-6">
+<div class="row">
+<div class="col-sm-2">
+<ul class="multi-column-dropdown">
+<li><a href="#">Blog</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li>
+<a href="blogstandart.html">Blog Standard</a>
+</li>
+<li><a href="#">Blog Masonry</a></li>
+<li><a href="#">Blog Timeline</a></li>
+
+</ul>
+</div>
+<div class="col-sm-2">
+<ul class="multi-column-dropdown">
+<li><a href="#">Profiles</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li><a href="#"></a>Vertical</li>
+<li><a href="#"></a>Horizontal</li>
+<li><a href="#"></a>Open Profile</li>
+
+</ul>
+</div>
+<div class="col-sm-2">
+<ul class="multi-column-dropdown">
+<li><a href="#">Portfolio Grid</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li><a href="#"></a>Large Gap</li>
+<li><a href="#"></a> 1 Pixel Gap</li>
+<li><a href="#"></a> No Gap</li>
+
+</ul>
+</div>
+<div class="col-sm-2">
+<ul class="multi-column-dropdown">
+<li><a href="#">Portfolio Puzzle</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li><a href="#"></a>Large Gap Puzzle</li>
+<li><a href="#"></a>1 Pixel Puzzle</li>
+<li><a href="#"></a>No Gap Puzzle</li>
+
+</ul>
+</div>
+
+
+<div class="col-sm-2">
+<ul class="multi-column-dropdown">
+<li><a href="#">Events</a></li>
+<li class="divider" style="background-color:red;"></li>
+<li><a href="#">Months</a></li>
+<li><a href="#">Photo</a></li>
+<li><a href="#">Map</a></li>
+
+</ul>
+</div>
+</div>
+</ul>
+</li>
+
+<li>
+<a href="http://all-business.cmsmasters.net/shop/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span  >Shop</span></a>
+
+</li>
+</ul>
+
+</div>
+</div>
+<!-- /.container-fluid -->
+</nav>
+</div>
+<div style="width:100%" class="hidden-xs" id="slider">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+<!-- Indicators -->
+
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<img src="1.png" alt="Los Angeles" style="width:100%;">
+<div class="carousel-caption d-none d-md-block">
+<h1>
+<span style="color:#00bcd4">Creative</span>.
+<span style="color:grey">Awesome.</span>
+<span style="color:black">Great</span>
+</h1>
+<p style="color:grey">Perfect theme for your business</p>
+<button class="custom">Read more</button>
+<button class="custom">SEE FEATURES</button>
+</div>
+</div>
+
+<div class="item">
+<img src="ay.png" alt="Chicago" style="width:100%;">
+<div class="carousel-caption d-none d-md-block">
+<h1>All business</h1>
+<p style="color:grey">Perfect theme for your business</p>
+<button class="custom">Read more</button>
+<button class="custom">Buy Now</button>
+</div>
+</div>
+
+<div class="item">
+<img src="by.png" alt="New york" style="width:100%;">
+<div class="carousel-caption d-none d-md-block">
+<h1>Start up your smash business</h1>
+<p style="color:grey">Perfect theme for your business</p>
+<button class="custom">Read more</button>
+<button class="custom">SEE FEATURES</button>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+<!-- Left and right controls -->
+
+</div>
+
+</div>
+
+<div class="container information">
+<div class="row">
+<div class="col-md-4 col-xs-12  col-sm-12">
+<h1>
+<i class="fa fa-headphones"></i>Expert Support</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+<button class="custom1" style="margin:0 auto">read more</button>
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12">
+<h1>
+<i class="fa fa-desktop"></i>Perfect Design</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+<button class="custom1" style="margin:0 auto">read more</button>
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12">
+<h1>
+<i class="fa fa-refresh"></i>Easy Installation</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+<button class="custom1" style="margin:0 auto">read more</button>
+</div>
+</div>
+</div>
+<div style="width:100%;background-color:#fafafa;padding-top:90px">
+<div class="container search">
+<div class="row">
+<div class="col-md-4 col col-sm-12 col-xs-12">
+<div class="row">
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-cog pull-right"></i>Easy Installation</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-snapchat pull-right"></i>User Friendly</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-rocket pull-right"></i>Retina Ready</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+</div>
+
+</div>
+<div class="col-md-4 col col-sm-12 col-xs-12 back">
+<img class="img-responsive" src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/iPhone-6S-340-w-w-l.jpg">
+</div>
+<div class="col-md-4  col-sm-12 col-xs-12 ">
+<div class="row">
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-comments pull-left"></i>Social Media</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-refresh pull-left"></i>Easy Installation</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+<div class="col-md-12 balacalar">
+<h1>
+<i class="fa fa-bar-chart pull-left"></i>Web Development</h1>
+<p>Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Etiam venenatis
+tortor odio, atpelle tesque neque tincidunt ut.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="attch" class="container-fluid">
+<div class="row">
+<div class="col-md-12 text-center">
+<h1>Work results</h1>
+<h3 style="color:#00bcd4">Marketing Research</h3>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 status">
+<div class="col-md-2 col-xs-10 col-sm-10">
+<span class="fa fa-money pull-right"></span>
+<div class="stat"></div>
+<span class="spn">Investments</span>
+</div>
+<div class="col-md-2 col-xs-10 col-sm-10">
+<span class="fa fa-user-o pull-right"></span>
+<div class="stat"></div>
+<span class="spn">Partnership</span>
+</div>
+<div class="col-md-2 col-xs-10 col-sm-10">
+<span class="fa fa-bar-chart pull-right"></span>
+<div class="stat"></div>
+<span class="spn">Finance</span>
+</div>
+<div class="col-md-2 col-xs-10 col-sm-10">
+<span class="fa fa-suitcase pull-right"></span>
+<div class="stat"></div>
+<span class="spn">Cooperation</span>
+</div>
+
+
+
+</div>
+</div>
+</div>
+<div class="projects">
+<div class="projects1">
+<h1>Our projects</h1>
+<p>Super flexibility for portfolio:
+<br> grid masonry puzzle layouts with editable column amount and paddings between elements.</p>
+</div>
+
+</div>
+<div class="container-fluid tab">
+<div class="tabs container">
+
+<div class="col-md-2 col-sm-5 col-xs-6">
+<span class="categories">All Categories</span>
+</div>
+<div class="col-md-2 col-sm-5 col-xs-3">
+<span class="branding">Branding</span>
+</div>
+<div class="col-md-2 col-sm-3 col-xs-3">
+<span class="business">business</span>
+</div>
+<div class="col-md-2 col-sm-3 col-xs-3">
+<span class="design">design</span>
+</div>
+<div class="col-md-2 col-sm-3 col-xs-3">
+<span class="material">material</span>
+</div>
+</div>
+</div>
+<div class="container content category">
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/smartwatch-1-1160x831.jpg" class="img-responsive">
+</div>
+<h2>Smartwatch </h2>
+<span>in branding</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_57650735_original-1.jpg" class="img-responsive">
+</div>
+<h2>Minimalism </h2>
+<span>in design</span>
+</div>
+
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_24170813_original-1-1.jpg" class="img-responsive">
+</div>
+<h2>Time is money </h2>
+<span>in business</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_67044065_original-2.jpg" class="img-responsive">
+</div>
+<h2>Style </h2>
+<span>in branding</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_75968269_original-1.jpg" class="img-responsive">
+</div>
+<h3>Best Solutions </h3>
+<span>in business</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/02-Isometric-iPad-Air-Silver-Mock-up-1.jpg" class="img-responsive">
+</div>
+<h3>Desing Tab </h3>
+<span>in business</span>
+</div>
+
+
+
+
+
+</div>
+<div class="container content brand">
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/smartwatch-1-1160x831.jpg" class="img-responsive">
+
+</div>
+<h2>Smartwatch </h2>
+<span>in branding</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_67044065_original-2.jpg" class="img-responsive">
+</div>
+<h2>Style </h2>
+<span>in branding</span>
+</div>
+</div>
+<div class="container content busy">
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_24170813_original-1-1.jpg" class="img-responsive">
+</div>
+<h2>Time is money </h2>
+<span>in business</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_75968269_original-1.jpg" class="img-responsive">
+</div>
+<h3>Best Solutions </h3>
+<span>in business</span>
+</div>
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/02-Isometric-iPad-Air-Silver-Mock-up-1.jpg" class="img-responsive">
+</div>
+<h3>Desing Tab </h3>
+<span>in business</span>
+</div>
+</div>
+<div class="container content color">
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_57650735_original-1.jpg" class="img-responsive">
+</div>
+<h2>Minimalism </h2>
+<span>in design</span>
+</div>
+</div>
+<div class="container content materials">
+<div class="col-md-3 col-sm-10 col-xs-10 sub">
+<div class="subject">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/02-Isometric-iPad-Air-Silver-Mock-up-1.jpg" class="img-responsive">
+</div>
+<h3>Desing Tab </h3>
+<span>in business</span>
+</div>
+
+</div>
+<div class=" info">
+<div class="col-md-4 col-sm-12 col-xs-12">
+<h1>Design and Code</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus leo orci, id pharetra odio varius ac. Integer
+accumsan posuere erat ac porttitor. Vestibulum porttitor est mi, sed sed.</p>
+<button class="butn1" style=" color: #00bcd4;
+background: white;">Read More</button>
+</div>
+<div class="col-md-4  col-sm-12 col-xs-12 iki">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_75968269_original-1.jpg">
+<h1>Visual & Smart</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus leo orci, id pharetra odio varius ac. Integerposuere
+erat ac porttitor. Vestibulum porttitor est mi, sed pharetra nisi dapibus sed.</p>
+<button class="butn1" style="background:#00bcd4">Read More</button>
+
+</div>
+<div class="col-md-4  col-sm-12 col-xs-12 uc">
+<h1>Easy & Simple</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus leo orci, id pharetra odio varius ac. Integerposuere
+erat ac porttitor. Vestibulum porttitor est mi, sed pharetra nisi dapibus sed.</p>
+<button class="butn1" style="background:#505050">Read More</button>
+</div>
+</div>
+
+
+<div class="container latest">
+<div class="col-md-12">
+<h1 class="text-sm-center text-xs-center">Latest News</h1>
+</div>
+</div>
+<div class="container">
+
+<div class='row'>
+<div class='col-md-12'>
+<div class="carousel slide media-carousel" id="media">
+<div class="carousel-inner">
+<div class="item  active">
+<div class="row">
+<div class="col-md-4 col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_69890777_original-580x320.jpg">
+<h3 style="color:grey">how to grow your business</h3>
+<span style="color:grey">in ideas</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+</div>
+</div>
+
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_26628643_original-1160x640.jpg">
+<h3 style="color:grey">Time is of the essence</h3>
+<span style="color:grey">in Innovation</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+
+</div>
+</div>
+
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_87226264_original-580x320.jpg">
+<h3 style="color:grey"> Good business habits</h3>
+<span style="color:grey">in Marketing</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+</div>
+
+</div>
+</div>
+</div>
+<div class="item">
+<div class="row">
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2016/01/Depositphotos_44532659_original-580x320.jpg">
+<h3 style="color:grey">Attractive Market for Business</h3>
+<span style="color:grey">in Ideas</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+
+</div>
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_52828011_original-580x320.jpg">
+<h3 style="color:grey">Small Business Stories</h3>
+<span style="color:grey">in Finance</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+
+</div>
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src='http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_69890753_original-580x320.jpg'>
+<h3 style="color:grey">Money makes Money</h3>
+<span style="color:grey">in Finance</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+</div>
+</div>
+
+</div>
+</div>
+<div class="item">
+<div class="row">
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_25449765_original-580x320.jpg">
+<h3 style="color:grey">Ideas+Solutions=Success</h3>
+<span style="color:grey">in Trends</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+</div>
+
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_26628539_original-580x320.jpg">
+<h3 style="color:grey">The Best Solutions</h3>
+<span style="color:grey">in Innovation</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+
+</div>
+
+</div>
+<div class="col-md-4  col-xs-12 col-sm-12 grd">
+<div style="border-bottom:1px solid #E1E1E1">
+<h5>January 8,2016</h5>
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_25012941_original-580x320.jpg">
+<h3 style="color:grey">Time Management</h3>
+<span style="color:grey">in Technology</span>
+</div>
+<div class="innovation">
+<span class="pull-left">
+<i class="fa fa-comments">0</i>
+<i class="fa fa-heart">50</i>
+</span>
+<button class="pull-right">Read more</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+<a data-slide="next" href="#media" class="right carousel-control">›</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid hediyye">
+<div class="col-md-12">
+<h2>We Guarantee</h2>
+<h4>We don't promise</h4>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-2  col-sm-5">
+<div class="progress yellow blue">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+
+
+<div class="progress-value">87%</div>
+
+
+</div>
+<span style="color:white;font-size:20px">Deposit</span>
+</div>
+<div class="col-md-2 col-sm-5">
+<div class="progress blue">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+<div class="progress-value">90%</div>
+</div>
+<span style="color:white;font-size:20px">Partnership</span>
+</div>
+
+<div class="col-md-2 col-sm-5">
+<div class="progress blue yellow">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+<div class="progress-value">84%</div>
+</div>
+<span style="color:white;font-size:20px">Reliability</span>
+</div>
+<div class="col-md-2 col-sm-5">
+<div class="progress blue pink">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+<div class="progress-value">65%</div>
+</div>
+<span style="color:white;font-size:20px">Capitalization</span>
+</div>
+<div class="col-md-2 col-sm-5">
+<div class="progress blue pink">
+<span class="progress-left">
+<span class="progress-bar"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar"></span>
+</span>
+<div class="progress-value">66%</div>
+</div>
+<span style="color:white;font-size:20px">Income</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="container members ">
+<h1>Team Members</h1>
+<p>Custom Projects and Profiles post type
+<br> is an ultimate combination for websites of any category and purpose!</p>
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="membersphoto">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_52492593_original-1-2-500x450.jpg"
+class="img-responsive">
+<div class="membersname">
+<h3>Dylan Brown</h3>
+<h4>Executive Chairman </h4>
+</div>
+</div>
+<div class="infoaboutmembers">
+<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo. Lorem ipsum dolor
+sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo.</p>
+<i class="fa fa-facebook pull-left"></i>
+<i class="fa fa-instagram pull-left"></i>
+<i class="fa fa-twitter pull-left"></i>
+<i class="fa fa-skype pull-left"></i>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="membersphoto">
+<img src='http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_48814135_original-1-2-500x450.jpg'
+class="img-responsive">
+<div class="membersname">
+<h3>Connor Walker</h3>
+<h4>Agent</h4>
+</div>
+</div>
+<div class="infoaboutmembers">
+<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo. Lorem ipsum dolor
+sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo.</p>
+<i class="fa fa-facebook pull-left"></i>
+<i class="fa fa-instagram pull-left"></i>
+<i class="fa fa-twitter pull-left"></i>
+<i class="fa fa-skype pull-left"></i>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="membersphoto">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/03/Depositphotos_59758007_original-1-4-500x450.jpg"
+class="img-responsive">
+<div class="membersname">
+<h3>Ethan Wood</h3>
+<h4>Agent</h4>
+</div>
+</div>
+<div class="infoaboutmembers">
+<p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo. Lorem ipsum dolor
+sit amet, conse ctetur adipiscing elit. Nullam etted mpus metus, et commodo.</p>
+<i class="fa fa-facebook pull-left"></i>
+<i class="fa fa-instagram pull-left"></i>
+<i class="fa fa-twitter pull-left"></i>
+<i class="fa fa-skype pull-left"></i>
+</div>
+</div>
+</div>
+<div class="container-fluid masters">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='2000'>
+<!-- Indicators -->
+<div class="container">
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<div class="col-md-2 col-xs-6">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/photodune-10624211-businesswoman-networking-s-300x300.jpg"
+class=" img-circle">
+</div>
+<div class="col-md-10 col-xs-12">
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+eos qui ratione voluptatem sequi nesciunt.</p>
+<h4>Jaclyn Williams</h4>
+<h5>Chili Ltd</h5>
+</div>
+</div>
+
+<div class="item">
+<div class="col-md-2 col-xs-6">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/photodune-8386876-employee-at-work-s-300x300.jpg"
+class=" img-circle">
+</div>
+<div class="col-md-10 col-xs-12">
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+eos qui ratione voluptatem sequi nesciunt.</p>
+<h4>Henry Ohara</h4>
+<h5>Future Inc</h5>
+</div>
+
+</div>
+
+<div class="item">
+<div class="col-md-2 col-xs-6">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/grey_head_man_sq-300x300.jpg" class=" img-circle">
+</div>
+<div class="col-md-10 col-xs-12">
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+eos qui ratione voluptatem sequi nesciunt.</p>
+<h4>Bruno Fibonacci</h4>
+<h5>Space Jam Co</h5>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid counter1">
+<div class="container counter">
+<div class="col-md-2 col-sm-2">
+<span>49</span>
+<h3>Works</h3>
+</div>
+<div class="col-md-2 col-sm-2">
+<span>26</span>
+<h3>Awards</h3>
+</div>
+<div class="col-md-2 col-sm-2">
+<span>144</span>
+<h3>Projects</h3>
+</div>
+<div class="col-md-2 col-sm-2">
+<span>48</span>
+<h3>Members</h3>
+</div>
+<div class="col-md-2 col-sm-2">
+<span>100+</span>
+<h3>Smiles</h3>
+</div>
+</div>
+</div>
+<div class="container prices">
+<h1 style="text-align:center;border-bottom:2px solid #00bcd4">Best Prices</h1>
+<p style="text-align:center;color:grey">99+ Custom Shortcodes work as fantastic building blocks for your pages. Very diverse and easy to manage, you will love
+them!
+</p>
+<div class="col-md-3 col-sm-6">
+<div class="div1">Basic</div>
+<div class="div2">
+<i class="fa fa-dollar"></i>
+<span>100</span>
+</div>
+<div class="divul">
+<ul style="list-style-type:none">
+<li>24/7 Tech Support</li>
+<li>200GB Storage</li>
+<li>2GB Bandwidth</li>
+<li>Free Upgrades</li>
+<li>Unlimited Users</li>
+</ul>
+</div>
+<button>Purchase</button>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="div1" style="background:#00bcd4;border-bottom:1px solid white;color:white">Regular </div>
+<div class="div2" style="background:#00bcd4;border-bottom:1px solid white;color:white">
+<i class="fa fa-dollar"></i>
+<span>200</span>
+</div>
+<div class="divul">
+<ul style="list-style-type:none">
+<li>24/7 Tech Support</li>
+<li>200GB Storage</li>
+<li>2GB Bandwidth</li>
+<li>Free Upgrades</li>
+<li>Unlimited Users</li>
+</ul>
+</div>
+<button>Purchase</button>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="div1" style="background:#ff4081;border-bottom:1px solid white;color:white">Pro </div>
+<div class="div2" style="background:#ff4081;border-bottom:1px solid white;color:white">
+<i class="fa fa-dollar"></i>
+<span>200</span>
+</div>
+<div class="divul">
+<ul style="list-style-type:none">
+<li>24/7 Tech Support</li>
+<li>200GB Storage</li>
+<li>2GB Bandwidth</li>
+<li>Free Upgrades</li>
+<li>Unlimited Users</li>
+</ul>
+</div>
+<button>Purchase</button>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="div1">Ultra</div>
+<div class="div2">
+<i class="fa fa-dollar"></i>
+<span>400</span>
+</div>
+<div class="divul">
+<ul style="list-style-type:none">
+<li>24/7 Tech Support</li>
+<li>200GB Storage</li>
+<li>2GB Bandwidth</li>
+<li>Free Upgrades</li>
+<li>Unlimited Users</li>
+</ul>
+</div>
+<button>Purchase</button>
+</div>
+</div>
+<div class="container" style="margin-top:100px">
+<div class="col-md-6 col-sm-6">
+<h1>Popular Works</h1>
+<p style="color:#00bcd4">Etiam venenatis tortor odio, at pellentesque neque tincidunt ut. Aenean a diam pulvinar, convallis. Porttitor est mi,
+sed pharetra nisi dapibus
+</p>
+<p style="color:grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus leo orci, id pharetra odio varius ac. Integer
+accumsan posuere erat ac porttitor. Vestibulum porttitor est mi, sed pharetra nisi dapibus sed. Maecenas iaculis
+leo sit amet tempor maximus.</p>
+</div>
+<div class="col-sm-6 col-md-6 statbar" style="padding-top:60px">
+<div class="col-md-11" style="color:grey">Design</div>
+<div class="col-md-1">74%</div>
+<div class="col-md-12">
+<div class="progress1">
+<div class="progress-bar1" style="width:84%">
+</div>
+</div>
+</div>
+<div class="col-md-11" style="color:grey">Business</div>
+<div class="col-md-1">80%</div>
+<div class="col-md-12">
+<div class="progress1">
+<div class="progress-bar1" style="width:90%">
+</div>
+</div>
+</div>
+<div class="col-md-11" style="color:grey">Progress</div>
+<div class="col-md-1">61%</div>
+<div class="col-md-12">
+<div class="progress1">
+<div class="progress-bar1" style="width:61%">
+</div>
+</div>
+</div>
+<div class="col-md-11" style="color:grey">Branding</div>
+<div class="col-md-1">89%</div>
+<div class="col-md-12">
+<div class="progress1">
+<div class="progress-bar1" style="width:88%">
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="sub2holder">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='1500'>
+<!-- Indicators -->
+
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<div class="col-md-4 col-sm-12 col-xs-12 subject2 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Smartwatch </h2>
+<span>in branding</span>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12 subject3 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Time is Money </h2>
+<span> in Business</span>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12 subject4 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Style </h2>
+<span>in Design</span>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col-md-4 col-sm-12 col-xs-12 subject9 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Design Tab </h2>
+<span>in branding</span>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12 subject7 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Minimalism </h2>
+<span>in Design</span>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12 subject8 sub2">
+
+<div style="width:100%" class="carousel2">
+<h2>Best Solutions </h2>
+<span>in business</span>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+<div class="container analyst" style="margin-top:100px">
+<div class="col-md-3 col-sm-3 col-xs-3">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/01.png" alt="" class="img-responsive">
+</div>
+<div class="col-md-3  col-sm-3 col-xs-3">
+<img src='http://all-business.cmsmasters.net/wp-content/uploads/2015/06/04.png' class="img-responsive">
+</div>
+<div class="col-md-3  col-sm-3 col-xs-3">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/05-3-1.png" class="img-responsive">
+</div>
+<div class="col-md-3  col-sm-3 col-xs-3">
+<img src="http://all-business.cmsmasters.net/wp-content/uploads/2015/06/03.png" alt="" class="img-responsive">
+</div>
+</div>
+<div>
+<div class="container-fluid" style="margin-top:50px;background:#00bcd4;color:white;height:auto;padding-top:30px">
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval='1500'>
+
+
+
+<div class="carousel-inner">
+<div class="item active">
+<div class="col-md-2">
+<i class="fa fa-twitter"></i>
+</div>
+<div class="col-md-10">
+<span>
+<span class="cmsmasters_twitter_item_content">
+Check out 'Be Clean - Cleaning Company, Maid Service &amp; Laundry WordPress Theme' by @cmsmasters #themeforest
+<a href="https://t.co/nifHgDnXes" target="_blank" rel="nofollow">https://t.co/nifHgDnXes</a>
+</span>
+</span>
+</div>
+</div>
+
+<div class="item">
+<div class="col-md-2">
+<i class="fa fa-twitter"></i>
+</div>
+<div class="col-md-10">
+<span>
+<span class="cmsmasters_twitter_item_content">
+Check out 'Be Clean - Cleaning Company, Maid Service &amp; Laundry WordPress Theme' by @cmsmasters #themeforest
+<a href="https://t.co/nifHgDnXes" target="_blank" rel="nofollow">https://t.co/nifHgDnXes</a>
+</span>
+</span>
+</div>
+</div>
+
+<div class="item">
+<div class="col-md-2">
+<i class="fa fa-twitter"></i>
+</div>
+<div class="col-md-10">
+<span>
+<span class="cmsmasters_twitter_item_content">
+Check out 'Be Clean - Cleaning Company, Maid Service &amp; Laundry WordPress Theme' by @cmsmasters #themeforest https://t.co/nifHgDnXes
+</span>
+</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<footer class="container-fluid">
+<div class="container">
+<div class="col-md-3">
+<h3>Contact Information</h3>
+<div class="lists">
+<ul style="list-style-type:none">
+<li>
+<i class="fa fa-location-arrow"></i>Brooklyn, NY 10036</li>
+<li>
+<i class="fa fa-clock-o"></i>Mon-Fri: 9am-6pm</li>
+<li>
+<i class="fa fa-user"></i>All Business</li>
+<li>
+<i class="fa fa-envelope"></i>business@example.com</li>
+<li>
+<i class="fa fa-phone"></i>1-345-6775</li>
+</ul>
+</div>
+</div>
+<div class="col-md-3">
+<h3>About Us</h3>
+<div class="lists">
+<ul style="list-style-type:none">
+<li>About us</li>
+<li>Our Team</li>
+<li>Engagement</li>
+<li>Communications</li>
+<li>Services</li>
+<li>Annual Report</li>
+
+</ul>
+</div>
+</div>
+<div class="col-md-3">
+<h3>Categories</h3>
+<div class="lists">
+<ul style="list-style-type:none">
+<li>
+<i class="fa fa-folder"></i>Finance</li>
+<li>
+<i class="fa fa-folder"></i>Innovations</li>
+<li>
+<i class="fa fa-folder"></i>Ideas</li>
+<li>
+<i class="fa fa-folder"></i>Marketing</li>
+<li>
+<i class="fa fa-folder"></i>Technology</li>
+<li>
+<i class="fa fa-folder"></i>Trends</li>
+</ul>
+</div>
+
+</div>
+<div class="col-md-3">
+<h3>Contact Us</h3>
+<form>
+<div class="form-group">
+<input required='true' type="text" class="form-control" id="usr" placeholder="Name*">
+</div>
+<div class="form-group">
+
+<input required='true' type="text" class="form-control" id="email" placeholder="Email*">
+</div>
+<div class="form-group">
+
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Message*"></textarea>
+</div>
+<input type="submit" value="Send Message" class="inputbtn">
+</form>
+</div>
+
+</div>
+<hr>
+
+<div class="container">
+<div class="col-md-6 col-sm-6 col-xs-6">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-twitter"></i>
+<i class="fa fa-instagram"></i>
+<i class="fa fa-google-plus"></i>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-6">
+<img class="img-responsive pull-right" src="http://all-business.cmsmasters.net/wp-content/uploads/2016/02/logo-footer.png">
+</div>
+<div class="col-md-6 col-sm-12 col-xs-12">
+<span>All Business © 2016 | All Rights Reserved</span>
+</div>
+
+</div>
+</footer>
+
+</body>
+
+</html>
